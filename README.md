@@ -1,4 +1,4 @@
-# publicaciones
+# Publicaciones
 Artículos, libros, presentaciones personales para uso educativo
 
 Todo con mi autoría
