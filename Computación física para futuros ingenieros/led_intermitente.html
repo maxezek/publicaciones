@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>LED intermitente | Computación Fisíca para futuros ingenieros </title>
+<meta name="author" content="Ezequiel Cabrillo García " />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.1 - exelearning.net" />
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript">$exe_i18n={previous:"Anterior",next:"Siguiente",show:"Mostrar",hide:"Ocultar",showFeedback:"Mostrar retroalimentación",hideFeedback:"Ocultar retroalimentación",correct:"Correcto",incorrect:"Incorrecto",menu:"Menú",print:"Imprimir"}</script>
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="SCORM_API_wrapper.js"></script>
+<script type="text/javascript" src="SCOFunctions.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-scorm" onload="loadPage()" onunload="unloadPage()"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="outer">
+<section id="main">
+<header id="nodeDecoration"><div id="headerContent"><h1 id="nodeTitle">LED intermitente</h1></div></header>
+<article class="iDevice_wrapper activityIdevice em_iDevice" id="id41">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Simulación de control de un LED</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta41_48_2" class="block iDevice_content">
+<p><span style="font-size: medium;">Se trata de simular el funcionamiento de un programa sobre scratch que controle el encendido y el apagado de un LED.</span></p>
+<ul>
+<li><span style="font-size: medium;">Debemos hacer el dibujo del circuito del LED apagado en Fritzing.</span></li>
+<li><span style="font-size: medium;">Retocar con el editor de dibujo de Scratch 2.0 el dibujo del circuito del LED encendido a partir del anterior.</span></li>
+<li><span style="font-size: medium;">Fijarse que el cátodo se conecta a GND (ground, tierra o 0 V) y que el ánodo se conecta en serie con una resistencia y al pin 13 de arduino.</span></li>
+</ul>
+<p><span style="font-size: medium;">Los dos dibujos anteriores deben ser objetos denominados <strong>LEDapagado</strong> y <strong>LEDencendido</strong>.</span></p>
+<p><span style="font-size: medium;">El siguiente vídeo muestra lo que se pretende conseguir.</span></p>
+<p> </p>
+<figure class="exe-figure exe-media position-center license-CC0" style="width: 599px;"><video width="599" height="449" class="mediaelement" src="scratchblinkLED.mp4" controls="controls"><a href="scratchblinkLED.mp4">scratchblinkLED.mp4</a></video><figcaption class="figcaption"><span class="author">Ezequiel Cabrillo</span> <span class="license"><span class="sep">(</span><a href="http://creativecommons.org/publicdomain/zero/1.0/deed.es" target="_blank" rel="license nofollow">CC0</a><span class="sep">)</span></span></figcaption></figure>
+<p><span style="font-size: medium;">El programa debe funcionar de la siguiente manera:<br /></span></p>
+<ul>
+<li><span style="font-size: medium;">Empezar al pulsar la bandera.</span></li>
+<li><span style="font-size: medium;">Inicialmente debe verse la placa arduino con el LED apagado.</span></li>
+<li><span style="font-size: medium;">Una variable denominada <strong>digital 13</strong> (pin al que está conectado el ánodo) debe tener de valor de estado "apagado". </span></li>
+<li><span style="font-size: medium;">Un personaje debe explicar que al pulsar  la barra espaciadora el LED empezará a encenderse o apagarse en intervalos de 1 segundo.</span></li>
+<li><span style="font-size: medium;">Al pulsar la barra espaciadora se inicia un ciclo tal que:</span></li>
+<li style="list-style-type: none;">
+<ul>
+<li><span style="font-size: medium;">digital 13 debe pasar al estado "encendido" y debe aparecer el LED encendido durante 1 segundo.Luego digital 13 debe volver al estado apagado y el LED debe aparecer apagado durante 1 segundo.</span></li>
+<li><span style="font-size: medium;">Así sucesivamente se debe repetir el ciclo.</span></li>
+<li><span style="font-size: medium;">El ciclo debe finalizar volviendo a pulsar la tecla espacio.</span></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</article>
+</section>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</div>
+<script type="text/javascript" src="_max_js.js"></script></body></html>

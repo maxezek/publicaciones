@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Control de un motor de corriente continua | Computación Fisíca para futuros ingenieros </title>
+<meta name="author" content="Ezequiel Cabrillo García " />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.1 - exelearning.net" />
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript">$exe_i18n={previous:"Anterior",next:"Siguiente",show:"Mostrar",hide:"Ocultar",showFeedback:"Mostrar retroalimentación",hideFeedback:"Ocultar retroalimentación",correct:"Correcto",incorrect:"Incorrecto",menu:"Menú",print:"Imprimir"}</script>
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="SCORM_API_wrapper.js"></script>
+<script type="text/javascript" src="SCOFunctions.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-scorm" onload="loadPage()" onunload="unloadPage()"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="outer">
+<section id="main">
+<header id="nodeDecoration"><div id="headerContent"><h1 id="nodeTitle">Control de un motor de corriente continua</h1></div></header>
+<article class="iDevice_wrapper FreeTextIdevice" id="id42">
+<div class="iDevice emphasis0">
+<div id="ta42_85" class="block iDevice_content">
+<p><span style="font-size: medium;">La propuesta aquí no es muy realista pero si muy funcional. La salida de los pines de arduino es de tan solo unos 40 mA de corriente y son pocos para mover dinámicamente a un motor de juguete de corriente continua. Sin embargo, los pines 5 y 6 son PWM ( son capaces de modular la potencia de una señal de salida en forma de onda en 255 niveles) y permiten variar la velocidad y el giro del motor así que podemos usarlos para este propósito.<br /></span></p>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper activityIdevice em_iDevice" id="id43">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Simulación del control de un motor CC</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta43_50_2" class="block iDevice_content">
+<p><span style="font-size: medium;">El siguiente vídeo ilustra lo que se pretende conseguir:</span></p>
+<figure class="exe-figure exe-media position-center license-CC0" style="width: 320px;"><video width="320" height="240" class="mediaelement" src="scratchmotor.mp4" controls="controls"><a href="scratchmotor.mp4">scratchmotor.mp4</a></video><figcaption class="figcaption"><span class="author">Ezequiel Cabrillo</span> <span class="license"><span class="sep">(</span><a href="http://creativecommons.org/publicdomain/zero/1.0/deed.es" target="_blank" rel="license nofollow">CC0</a><span class="sep">)</span></span></figcaption></figure>
+<p><span style="font-size: medium;"> </span></p>
+<p><span style="font-size: medium;">Se trata de simular el funcionamiento de un programa sobre scratch que controle el sentido de giro y la velocidad de un motor de corriente continua.</span></p>
+<p> </p>
+<ul>
+<li><span style="font-size: medium;">Debemos hacer el dibujo del circuito del control de motor apagado en Fritzing.</span></li>
+<li><span style="font-size: medium;">Retocar con el editor de dibujo de Scratch 2.0 el dibujo del circuito para añadir una hélice o un indicador del giro y de la velocidad.</span></li>
+<li><span style="font-size: medium;">Fijarse que un cable se conecta al pin 5 y otro al pin 6. Los vamos a denotar en el programa con una lista de dos componentes que llamaremos digital 5 y digital 6, el primer valor puede oscilar de 0 a 255 y representa la velocidad del motor y el segundo es LOW o HIGH que representan voltajes de 0 V y 5 V que van a servir para cambiar la polaridad del motor y, por tanto, su sentido de giro.</span></li>
+<li><span style="font-size: medium;"><span style="font-size: medium;">La tabla que muestra el funcionamiento sería:</span></span>
+<table border="4">
+<tbody>
+<tr>
+<td>digital 5</td>
+<td>digital 6</td>
+<td>Velocidad</td>
+</tr>
+<tr>
+<td>255</td>
+<td>255</td>
+<td>Máxima</td>
+</tr>
+<tr>
+<td>127</td>
+<td>127</td>
+<td>Mitad de la máxima</td>
+</tr>
+</tbody>
+</table>
+<table border="4">
+<tbody>
+<tr>
+<td>digital 5</td>
+<td>digital 6</td>
+<td>sentido de giro</td>
+</tr>
+<tr>
+<td>HIGH</td>
+<td>LOW</td>
+<td>antihorario</td>
+</tr>
+<tr>
+<td>LOW</td>
+<td>HIGH</td>
+<td>horario</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<p> </p>
+<p><span style="font-size: medium;">El programa debe funcionar de la siguiente manera:<br /></span></p>
+<p> </p>
+<ul>
+<li><span style="font-size: medium;">Empezar al pulsar la bandera.</span></li>
+<li><span style="font-size: medium;">Inicialmente debe verse la placa arduino con el motor apagado.</span></li>
+<li><span style="font-size: medium;">Una lista denominada <strong>digital 5</strong> (uno de los pines a los que está conectado el motor) debe tener los valores 0 y LOW.</span></li>
+<li><span style="font-size: medium;"><span style="font-size: medium;">Una lista denominada <strong>digital 6</strong> (uno de los pines a los que está conectado el motor) debe tener los valores 0 y LOW.</span></span></li>
+<li><span style="font-size: medium;">Un personaje debe explicar que al pulsar  la tecla A el motor  empezará a girar en sentido antihorario. Si además se pulsa a la vez flecha arriba el motor girará más rápido. Si se pulsa flecha abajo el motor gira más lento.</span></li>
+<li><span style="font-size: medium;">También <span style="font-size: medium;">debe explicar que al pulsar  la tecla H el motor  empezará a girar en sentido contrario. <span style="font-size: medium;">Si además se pulsa a la vez flecha arriba el motor girará más rápido. Si se pulsa flecha abajo el motor gira más lento.</span></span></span></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</article>
+</section>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</div>
+<script type="text/javascript" src="_max_js.js"></script></body></html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Los bloques Scratch de s4a | Computación Fisíca para futuros ingenieros </title>
+<meta name="author" content="Ezequiel Cabrillo García " />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.1 - exelearning.net" />
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript">$exe_i18n={previous:"Anterior",next:"Siguiente",show:"Mostrar",hide:"Ocultar",showFeedback:"Mostrar retroalimentación",hideFeedback:"Ocultar retroalimentación",correct:"Correcto",incorrect:"Incorrecto",menu:"Menú",print:"Imprimir"}</script>
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="SCORM_API_wrapper.js"></script>
+<script type="text/javascript" src="SCOFunctions.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-scorm" onload="loadPage()" onunload="unloadPage()"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="outer">
+<section id="main">
+<header id="nodeDecoration"><div id="headerContent"><h1 id="nodeTitle">Los bloques Scratch de s4a</h1></div></header>
+<article class="iDevice_wrapper FreeTextIdevice" id="id52">
+<div class="iDevice emphasis0">
+<div id="ta52_85" class="block iDevice_content">
+<p><span style="font-size: medium;">El entorno de programación estándar de Arduino es <strong>Arduino IDE</strong>. El lenguaje de programación de alto nivel que usa Arduino IDE es <strong>Wiring/Processing</strong> que es una variante de Java dirigida a facilitar la programación de este tipo de dispositivos. Las órdenes de escritas de Wiring tienen su equivalencia en un bloque de Scratch en s4a.</span></p>
+<p><span style="font-size: medium;">Nuestro Arduino tiene una serie de pines numerados que se pueden activar para leer de ellos o para escribir sobre ellos. Por ejemplo, si queremos usar un LED  debemos conectar una patilla a tierra GND (ground es tierra en inglés) y la otra  a un pin de los denominados a digitales, en concreto el 13. El circuito real incluiría más elementos como resistencias para acondicionar el circuito pero básicamente esta es la idea. Como lo que queremos en este ejemplo es usar ese pin para encender el LED debemos entonces preparar ese pin para ello como SALIDA con la orden:<br /></span></p>
+<p><span style="font-family: courier new,courier; background-color: #ffff00;"><strong><span style="font-size: medium;">pinMode(13, OUTPUT);</span></strong></span></p>
+<p><span style="font-size: medium;">Como era de esperar Wiring usa como base el inglés. OUTPUT/INPUT son dos expresiones predefinidas para indicar que el pin indicado (el 13 en este caso) funcione como SALIDA o ENTRADA cuando corresponda. Fijate que la orden termina con puno y coma, ;. </span></p>
+<p><span style="font-size: medium;">Para encender el LED debemos incluir en el programa otra orden que activa la salida del pin a ALTO que se corresponde con 5V (¡Ojo! puede usarse una versión con ALTO a 3,3 V). La sentencia a escribir es:</span></p>
+<p><span style="font-family: courier new,courier; background-color: #ffff00;"><strong><span style="font-size: medium;">digitalWrite(13, HIGH);</span></strong></span></p>
+<p><span style="font-size: medium;">De nuevo la orden acaba en punto y coma. </span></p>
+<p><span style="font-size: medium;">Las ordenes anteriores son un ejemplo de <em>mapa</em> de Arduino. Se denomina <em>mapeado</em> (horrorosa palabra que proviene de la expresión inglesa mapping) a como se van asignando los pines como ENTRADA/SALIDA y como se activan.</span></p>
+<p><span style="font-size: medium;">Esto en s4a es muchísimo más simple y en la versión original solo se puede hacer para unos cuantos pines.</span></p>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper preknowledgeIdevice em_iDevice" id="id53">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Mapeado en s4a</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta53_43_2" class="block iDevice_content">
+<p><span style="font-size: medium;">En s4a tenemos traducido Wiring a bloques de scratch y al castellano. Esta tabla muestra ese mapeado:</span></p>
+<table style="margin-left: auto; margin-right: auto; border-color: #000066; border-width: 3px; border-style: solid;" border="3">
+<tbody>
+<tr>
+<td style="border-color: #000066; border-style: solid; border-width: 1px;"><span style="font-size: medium;">Acciones</span></td>
+<td style="border-color: #000066; border-style: solid; border-width: 1px;"><span style="font-size: medium;">Pines de Arduino</span></td>
+<td style="border-color: #000066; border-style: solid; border-width: 1px;"><span style="font-size: medium;">Bloques de programación</span></td>
+</tr>
+<tr>
+<td style="border-color: #000066; border-style: solid; border-width: 1px;"><span style="font-size: medium;"> Lectura digital</span></td>
+<td style="border-color: #000066; border-style: solid; border-width: 1px;"><span style="font-size: medium;"> digitales 2 y 3</span></td>
+<td style="border-color: #000066; border-style: solid; border-width: 1px;"><span style="font-size: medium;"> <img src="Seleccion_087.png" alt="lectura digital" height="28" width="211" /></span></td>
+</tr>
+<tr>
+<td style="border-color: #000066; border-style: solid; border-width: 1px;"><span style="font-size: medium;"> Escritura digital</span></td>
+<td style="border-color: #000066; border-style: solid; border-width: 1px;"><span style="font-size: medium;"> digitales 10, 11 y 13</span></td>
+<td style="border-color: #000066; border-style: solid; border-width: 1px;"><span style="font-size: medium;"> <img src="Seleccion_088.png" alt="escriytura digital" height="76" width="150" /></span></td>
+</tr>
+<tr>
+<td style="border-color: #000066; border-style: solid; border-width: 1px;"><span style="font-size: medium;"> Lectura analógica</span></td>
+<td style="border-color: #000066; border-style: solid; border-width: 1px;"><span style="font-size: medium;"> analógicos de 0 al 5</span></td>
+<td style="border-color: #000066; border-style: solid; border-width: 1px;"><span style="font-size: medium;"> <img src="Seleccion_089.png" alt="lectura analógica" height="31" width="180" /></span></td>
+</tr>
+<tr>
+<td style="border-color: #000066; border-style: solid; border-width: 1px;"><span style="font-size: medium;"> Escritura analógica</span></td>
+<td style="border-color: #000066; border-style: solid; border-width: 1px;"><span style="font-size: medium;"> digitales 5, 6 y 9</span></td>
+<td style="border-color: #000066; border-style: solid; border-width: 1px;"><span style="font-size: medium;"> <img src="Seleccion_090.png" alt="Escritura analógica" height="34" width="166" /></span></td>
+</tr>
+<tr>
+<td style="border-color: #000066; border-style: solid; border-width: 1px;"><span style="font-size: medium;"> Control de un servo de rotación continua</span></td>
+<td style="border-color: #000066; border-style: solid; border-width: 1px;"><span style="font-size: medium;"> digitales 4 y 7</span></td>
+<td style="border-color: #000066; border-style: solid; border-width: 1px;"><span style="font-size: medium;"> <img src="Seleccion_091.png" alt="servo continuo" height="87" width="203" /></span></td>
+</tr>
+<tr>
+<td style="border-color: #000066; border-style: solid; border-width: 1px;"><span style="font-size: medium;"> Control de un servo estándar</span></td>
+<td style="border-color: #000066; border-style: solid; border-width: 1px;"><span style="font-size: medium;"> digitales 8 y 12</span></td>
+<td style="border-color: #000066; border-style: solid; border-width: 1px;"><span style="font-size: medium;"> <img src="Seleccion_092.png" alt="servo estándar" height="35" width="156" /></span></td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-size: medium;"> El conjunto total de órdenes nuevas se encuentra en sección de Movimiento de s4a e incluye todas estas instrucciones:</span></p>
+<div style="text-align: center;"><img alt="ordenes 01" style="margin: 10px;" src="s4a01.png" height="133" width="195" /><img alt="ordenes 02" style="margin: 10px;" src="s4a02.png" height="150" width="192" /><img alt="ordenes 03" src="s4a03.png" height="160" width="164" /></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</section>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</div>
+<script type="text/javascript" src="_max_js.js"></script></body></html>

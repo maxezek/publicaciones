@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Simulación de Arduino | Computación Fisíca para futuros ingenieros </title>
+<meta name="author" content="Ezequiel Cabrillo García " />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.1 - exelearning.net" />
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_lightbox.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_lightbox.js"></script>
+<script type="text/javascript">$exe_i18n={previous:"Anterior",next:"Siguiente",show:"Mostrar",hide:"Ocultar",showFeedback:"Mostrar retroalimentación",hideFeedback:"Ocultar retroalimentación",correct:"Correcto",incorrect:"Incorrecto",menu:"Menú",print:"Imprimir"}</script>
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="SCORM_API_wrapper.js"></script>
+<script type="text/javascript" src="SCOFunctions.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-scorm" onload="loadPage()" onunload="unloadPage()"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="outer">
+<section id="main">
+<header id="nodeDecoration"><div id="headerContent"><h1 id="nodeTitle">Simulación de Arduino</h1></div></header>
+<article class="iDevice_wrapper FreeTextIdevice" id="id44">
+<div class="iDevice emphasis0">
+<div id="ta44_85" class="block iDevice_content">
+<p><span style="font-size: medium;"><strong>Arduino</strong> es una placa controladora de <em>hardware libre</em>. El hardware consiste en una placa con un microcontrolador sencillo y bajo coste y <em>puertos</em> de entrada/salida.  Los puertos son <em>pines</em> o patillas para hacer conexiones eléctricas con cables. Tiene varios pines digitales y 6 entradas analógicas. Con ello, se pueden conectar sensores o actuadores y se pueden controlar luces, motores y otros actuadores.</span></p>
+<p><span style="font-size: medium;">Que sea hardware libre significa que podemos montar y reconfigurar el diseño de la placa controladora sin depender de terceros. Por ello existen varias plataformas Arduinos y de ellas nos vamos a centrar en la más común, el arduino UNO.</span></p>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper GalleryIdevice em_iDevice" id="id45">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Imágenes de arduino UNO</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<ul class="exeImageGallery" id="exeImageGallery45">
+<li><a title="Arduino UNO" href="arduino01.jpg"><img alt="Arduino UNO" width="128" height="128" src="arduino01Thumbnail.png" /><span class="tit">Arduino UNO</span></a></li>
+<li><a title="Arduino UNO: pines de E/S" href="arduino02.jpg"><img alt="Arduino UNO: pines de E/S" width="128" height="128" src="arduino02Thumbnail.png" /><span class="tit">Arduino UNO: pines de E/S</span></a></li>
+<li><a title="Montaje con ayuda de placa de prototipos" href="arduino03.jpg"><img alt="Montaje con ayuda de placa de prototipos" width="128" height="128" src="arduino03Thumbnail.png" /><span class="tit">Montaje con ayuda de placa de prototipos</span></a></li>
+<li><a title="Montaje de un circuito con LED sobre placa de prototipos" href="arduino04.jpg"><img alt="Montaje de un circuito con LED sobre placa de prototipos" width="128" height="128" src="arduino04Thumbnail.png" /><span class="tit">Montaje de un circuito con LED sobre placa de prototipos</span></a></li>
+</ul>
+<script type="text/javascript">$exe.imageGallery.init("exeImageGallery45");</script>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper FreeTextIdevice" id="id46">
+<div class="iDevice emphasis0">
+<div id="ta46_85" class="block iDevice_content">
+<p><span style="font-size: medium;">Por otro lado el software consiste en un entorno de desarrollo denominado <strong>Arduino IDE</strong> que implementa el lenguaje de programación <strong>Processing</strong>/Wiring y el cargador de arranque que es ejecutado en la placa. Como alternativa a este IDE y al lenguaje processing se puede usar el software <strong>s4a</strong> (scratch for arduino) o <strong>s2a-fm</strong> (scratch to arduino - firmata).</span></p>
+<p><span style="font-size: medium;">Antes de usar estas variantes de Scratch vamos a simular la placa arduino con una imagen y hacer implementaciones virtuales de lo que se puede programar. Vamos a simular la programación de un LED para que sea intermitente, el control de giro de un motor CC simple y lo mismo para un servo motor.</span></p>
+<p><span style="font-size: medium;">Todas las imágenes de Arduino que son dibujos están exportadas del programa <strong>fritzing</strong>.<br /></span></p>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper GalleryIdevice em_iDevice" id="id47">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Imágenes para usar con Scratch</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<ul class="exeImageGallery" id="exeImageGallery47">
+<li><a title="Arduino UNO" href="arduino_Uno_Rev3_fritzing.png"><img alt="Arduino UNO" width="128" height="128" src="arduino_Uno_Rev3_fritzingThumbnail.png" /><span class="tit">Arduino UNO</span></a></li>
+<li><a title="Arduino con LED apagado" href="arduino_leda_fritzing.png"><img alt="Arduino con LED apagado" width="128" height="128" src="arduino_leda_fritzingThumbnail.1.png" /><span class="tit">Arduino con LED apagado</span></a></li>
+<li><a title="Arduino con LED encendido" href="arduino_ledb_fritzing.png"><img alt="Arduino con LED encendido" width="128" height="128" src="arduino_ledb_fritzingThumbnail.png" /><span class="tit">Arduino con LED encendido</span></a></li>
+<li><a title="Arduino con motor de corriente continua" href="arduino_motorcc.png"><img alt="Arduino con motor de corriente continua" width="128" height="128" src="arduino_motorccThumbnail.png" /><span class="tit">Arduino con motor de corriente continua</span></a></li>
+<li><a title="Arduino con servo motor" href="arduino_servo_fritzing.png"><img alt="Arduino con servo motor" width="128" height="128" src="arduino_servo_fritzingThumbnail.png" /><span class="tit">Arduino con servo motor</span></a></li>
+</ul>
+<script type="text/javascript">$exe.imageGallery.init("exeImageGallery47");</script>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper FreeTextIdevice" id="id48">
+<div class="iDevice emphasis0">
+<div id="ta48_85" class="block iDevice_content">
+<p><span style="font-size: medium;">Para reproducir estos dibujos usamos el programa de electrónica <strong>Fritzing</strong> que permite exportar la imagen del circuito a los formatos png o svg.</span></p>
+<p><span style="font-size: medium;">Fritzing se encuentra en el menú Educación de MAX.</span></p>
+</div>
+</div>
+</article>
+</section>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</div>
+<script type="text/javascript" src="_max_js.js"></script></body></html>
