@@ -1,7 +1,11 @@
 # Taller-TCOS
 
-Editada dentro de la web de MAX[MAX](https://www.educa2.madrid.org/web/max/)  por la Dirección General de Becas y Ayudas al Estudio de la Consejería de Educación e Investigación de la Comunidad de Madrid
+Editada dentro de la web de [MAX](https://www.educa2.madrid.org/web/max/)  por la Dirección General de Becas y Ayudas al Estudio de la Consejería de Educación e Investigación de la Comunidad de Madrid
 **ISSN: 2605-5260** de la web completa
+
+Puede verse el libro sin los vídeos en este enlace
+
+[TALLER TCOS](https://www.educa2.madrid.org/web/max/documentacion/taller_tcos/-/book/taller-de-tcos)
  
 Apartado libre por capitulos de
 
