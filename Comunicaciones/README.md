@@ -1,7 +1,7 @@
 # Comunicaciones
 Conferencias:
 
-[**M A X : *Linux for Education in the Region of MADRID* **](https://github.com/maxezek/publicaciones/blob/master/Comunicaciones/ezequiel_cabrillo_presentationLPI.pdf) 
+[**MAX: Linux for Education in the Region of MADRID**](https://github.com/maxezek/publicaciones/blob/master/Comunicaciones/ezequiel_cabrillo_presentationLPI.pdf) 
 
 *LPI Summit 2018* 
 Benidorm, junio de 2018
